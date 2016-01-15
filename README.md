@@ -155,6 +155,14 @@ See [tested examples](https://github.com/mashpie/i18n-node/tree/master/examples)
 
 Returns a new instance with isolated scope.
 
+### getLang()
+
+Returns language code from locale.
+
+### parseLocale()
+
+Returns a locale found in the directory where json files are stored.
+
 ### __()
 
 Translates a single phrase and adds it to locales if unknown. Returns translated parsed and substituted string.

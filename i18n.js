@@ -756,6 +756,31 @@ function create () {
     logErrorFn(msg);
   }
 
+  // update
+
+  i18n.DEFAULT_LANG = 'en';
+  i18n.DEFAULT_LOCALE = 'en-US';
+
+  i18n.getLang = function (locale) {
+    return (locale && locale.split('-')[0]) || i18n.DEFAULT_LANG;
+  };
+
+  i18n.parseLocale = function (locale) {
+    if (locale) {
+      var locales = Object.keys(i18n.getCatalog());
+
+      if (locales.indexOf(locale) < 0) {
+        return _.find(locales, function (v) {
+              return v && v.indexOf(locale) === 0;
+            }) || i18n.DEFAULT_LOCALE;
+      }
+      return locale;
+    }
+    else {
+      return i18n.DEFAULT_LOCALE;
+    }
+  };
+
   return i18n;
 
 }
