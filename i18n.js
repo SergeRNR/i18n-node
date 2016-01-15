@@ -1,9 +1,12 @@
 /**
- * @author      Created by Marcus Spiegel <marcus.spiegel@gmail.com> on 2011-03-25.
- * @link        https://github.com/mashpie/i18n-node
+ * @author      Created by Serge Melnikov <rnrserge@gmail.com> on 2016-01-14
+ *              Original created by Marcus Spiegel <marcus.spiegel@gmail.com> on 2011-03-25
+ * @link        https://github.com/SergeRNR/i18n-node
+ *              original: https://github.com/mashpie/i18n-node
  * @license     http://opensource.org/licenses/MIT
  *
- * @version     0.4.1
+ * @version     0.0.1
+ *              Forked from: 0.5.0
  */
 
 function create () {
@@ -22,10 +25,10 @@ function create () {
       pathsep = path.sep || '/', // ---> means win support will be available in node 0.8.x and above
       defaultLocale, fallbacks, updateFiles, cookiename, extension, directory, indent, objectNotation, logDebugFn, logWarnFn, logErrorFn;
 
-// public exports
+  // public exports
   var i18n = {};
 
-  i18n.version = '0.6.0';
+  i18n.version = '0.5.0';
 
   i18n.configure = function i18nConfigure(opt) {
 

@@ -1,13 +1,13 @@
 {
-  "name": "i18n",
+  "name": "i18n-factory",
   "description": "lightweight translation module with dynamic json storage",
-  "version": "0.6.0",
-  "homepage": "http://github.com/mashpie/i18n-node",
+  "version": "0.0.1",
+  "homepage": "https://github.com/SergeRNR/i18n-node",
   "repository": {
     "type": "git",
-    "url": "http://github.com/mashpie/i18n-node.git"
+    "url": "https://github.com/SergeRNR/i18n-node.git"
   },
-  "author": "Marcus Spiegel <marcus.spiegel@gmail.com>",
+  "author": "Serge Melnikov <rnrserge@gmail.com>",
   "main": "./index",
   "keywords": [
     "template",
